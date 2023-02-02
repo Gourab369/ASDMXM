@@ -14,8 +14,8 @@ public class CalculatorMain {
 		System.out.println("3-> Division");
 		System.out.println("4-> Multiplication");
 		System.out.println("5-> Modulus");
-		
-		System.out.println("6-> Exit");
+		System.out.println("6-> Power");
+		System.out.println("7-> Exit");
 		System.out.println("Choose an operation to perform: ");
 		choice=sc.nextInt();
 		switch(choice) {
@@ -55,6 +55,13 @@ public class CalculatorMain {
 			System.out.println( "Result: "+mf.modulus(num1, num2));
 			break;
 		case 6:
+			System.out.print("Enter Num 1: ");
+			num1=sc.nextFloat();
+			System.out.print("Enter Num 2: ");
+			num2=sc.nextFloat();
+			System.out.println( "Result: "+mf.power(num1, num2));
+			break;
+		case 7:
 			choice=0;
 			System.out.println("Bye!!");
 			break;
